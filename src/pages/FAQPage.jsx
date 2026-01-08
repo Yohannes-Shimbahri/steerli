@@ -66,7 +66,7 @@ export default function FAQPage() {
 
   const instructorFAQs = [
     {
-      question: "How do I become an instructor on Steerly?",
+      question: "How do I become an instructor on Steerli?",
       answer: "Click 'Sign Up as Instructor' and complete the application. You'll need a valid driving instructor license, insurance, and to pass our background check. The approval process typically takes 3-5 business days."
     },
     {
@@ -90,22 +90,22 @@ export default function FAQPage() {
       answer: "If a student cancels less than 24 hours before the lesson, you'll receive a cancellation fee. If they cancel with proper notice, the time slot opens up for other students to book."
     },
     {
-      question: "How does Steerly help me grow my business?",
+      question: "How does Steerli help me grow my business?",
       answer: "We provide you with a professional profile, handle all marketing to attract students, manage bookings and payments, and give you tools to track your schedule and earnings. You focus on teaching, we handle the rest!"
     },
     {
-      question: "What fees does Steerly charge?",
-      answer: "Steerly takes a small service fee from each lesson (typically 15-20%). This covers payment processing, platform maintenance, marketing, and customer support. You keep the majority of what you earn."
+      question: "What fees does Steerli charge?",
+      answer: "Steerli takes a small service fee from each lesson (typically 15-20%). This covers payment processing, platform maintenance, marketing, and customer support. You keep the majority of what you earn."
     }
   ];
 
   const generalFAQs = [
     {
-      question: "Is Steerly available in my area?",
+      question: "Is Steerli available in my area?",
       answer: "We're currently available in most major areas across the Canada and expanding rapidly. Enter your location during signup to see available instructors in your area."
     },
     {
-      question: "How does Steerly ensure quality?",
+      question: "How does Steerli ensure quality?",
       answer: "All instructors are verified and background-checked. Students can rate and review instructors after each lesson. We monitor feedback closely and work with instructors to maintain high standards."
     },
     {
@@ -122,7 +122,7 @@ export default function FAQPage() {
           <div className="flex justify-between items-center h-16">
             <a href="/" className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
               <img src="/images/steerly-logo.jpeg" alt="Steerly Logo" className="h-15 w-auto" />
-              <span className="text-2xl font-bold text-gray-900">Steerly</span>
+              <span className="text-2xl font-bold text-gray-900">Steerli</span>
             </a>
             
             <nav className="flex items-center space-x-6">
@@ -141,7 +141,7 @@ export default function FAQPage() {
             Frequently Asked <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600">Questions</span>
           </h1>
           <p className="text-xl text-gray-600">
-            Find answers to common questions about Steerly. Can't find what you're looking for? 
+            Find answers to common questions about Steerli. Can't find what you're looking for? 
             <a href="/contact" className="text-indigo-600 hover:text-indigo-700 font-medium"> Contact us</a>.
           </p>
         </div>
@@ -202,7 +202,7 @@ export default function FAQPage() {
             <div>
               <div className="flex items-center space-x-2 mb-4">
                 <img src="/images/steerly-logo.jpeg" alt="Steerly Logo" className="h-15 w-auto" />
-                <span className="text-2xl font-bold text-white">Steerly</span>
+                <span className="text-2xl font-bold text-white">Steerli</span>
               </div>
               <p className="text-gray-400">
                 Connecting students with professional driving instructors for a safer, smarter way to learn.
@@ -236,7 +236,7 @@ export default function FAQPage() {
           </div>
           
           <div className="border-t border-gray-800 pt-8 text-center text-gray-400">
-            <p>&copy; 2025 Steerly. All rights reserved.</p>
+            <p>&copy; 2026 Steerli. All rights reserved.</p>
           </div>
         </div>
       </footer>

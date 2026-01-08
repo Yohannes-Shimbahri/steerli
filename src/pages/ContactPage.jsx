@@ -78,7 +78,7 @@ export default function ContactPage() {
           <div className="flex justify-between items-center">
             <a href="/" className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
               <img src="/images/steerly-logo.jpeg" alt="Steerly Logo" className="h-15 w-auto" />
-              <span className="text-2xl font-bold text-gray-900">Steerly</span>
+              <span className="text-2xl font-bold text-gray-900">Steerli</span>
             </a>
             
             {/* Desktop Navigation */}
@@ -303,7 +303,7 @@ export default function ContactPage() {
             <div>
               <div className="flex items-center space-x-2 mb-4">
                 <img src="/images/steerly-logo.jpeg" alt="Steerly Logo" className="h-15 w-auto" />
-                <span className="text-2xl font-bold text-white">Steerly</span>
+                <span className="text-2xl font-bold text-white">Steerli</span>
               </div>
               <p className="text-gray-400">
                 Connecting students with professional driving instructors for a safer, smarter way to learn.
@@ -337,7 +337,7 @@ export default function ContactPage() {
           </div>
           
           <div className="border-t border-gray-800 pt-8 text-center text-gray-400">
-            <p>&copy; 2025 Steerly. All rights reserved.</p>
+            <p>&copy; 2026 Steerli. All rights reserved.</p>
           </div>
         </div>
       </footer>

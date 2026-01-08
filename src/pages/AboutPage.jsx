@@ -27,7 +27,7 @@ export default function AboutPage() {
           <div className="flex justify-between items-center">
             <a href="/" className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
               <img src="/images/steerly-logo.jpeg" alt="Steerly Logo" className="h-15 w-auto" />
-              <span className="text-2xl font-bold text-gray-900">Steerly</span>
+              <span className="text-2xl font-bold text-gray-900">Steerli</span>
             </a>
             
             {/* Desktop Navigation */}
@@ -69,7 +69,7 @@ export default function AboutPage() {
       <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-indigo-50 via-purple-50 to-white">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl font-bold text-gray-900 mb-6 animate-slideUp">
-            About <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600">Steerly</span>
+            About <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600">Steerli</span>
           </h1>
           <p className="text-xl text-gray-600 animate-slideUp" style={{animationDelay: '0.1s'}}>
             We're on a mission to make quality driving education accessible, 
@@ -86,7 +86,7 @@ export default function AboutPage() {
               <Target className="w-16 h-16 text-indigo-600 mb-6" />
               <h2 className="text-4xl font-bold text-gray-900 mb-6">Our Mission</h2>
               <p className="text-lg text-gray-600 mb-4">
-                Learning to drive is one of life's most important milestones. At Steerly, 
+                Learning to drive is one of life's most important milestones. At Steerli, 
                 we believe everyone deserves access to quality instruction from verified, 
                 professional driving instructors.
               </p>
@@ -109,7 +109,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl font-bold text-center text-gray-900 mb-4">Our Values</h2>
           <p className="text-center text-gray-600 mb-16 max-w-2xl mx-auto">
-            These principles guide everything we do at Steerly.
+            These principles guide everything we do at Steerli.
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -137,7 +137,7 @@ export default function AboutPage() {
           <h2 className="text-4xl font-bold text-gray-900 mb-6 text-center">Our Story</h2>
           <div className="prose prose-lg max-w-none text-gray-600 space-y-4">
             <p>
-              Steerly was born from a simple observation: finding a great driving instructor 
+              Steerli was born from a simple observation: finding a great driving instructor 
               shouldn't be difficult. Too many students settle for whoever is available or 
               affordable, rather than finding an instructor who truly matches their needs.
             </p>
@@ -147,7 +147,7 @@ export default function AboutPage() {
               paperwork than teaching.
             </p>
             <p>
-              We built Steerly to solve both problems. Our platform makes it easy for students 
+              We built Steerli to solve both problems. Our platform makes it easy for students 
               to find verified, reviewed instructors who match their preferences while giving 
               instructors powerful tools to grow their business and focus on what they do best: teaching.
             </p>
@@ -158,7 +158,7 @@ export default function AboutPage() {
       {/* Stats Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-indigo-600 to-purple-600 text-white">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-16">Steerly by the Numbers</h2>
+          <h2 className="text-4xl font-bold text-center mb-16">Steerli by the Numbers</h2>
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
@@ -179,7 +179,7 @@ export default function AboutPage() {
       {/* CTA Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold text-gray-900 mb-6">Join the Steerly Community</h2>
+          <h2 className="text-4xl font-bold text-gray-900 mb-6">Join the Steerli Community</h2>
           <p className="text-xl text-gray-600 mb-8">
             Whether you're learning to drive or teaching others, we'd love to have you with us.
           </p>
@@ -202,7 +202,7 @@ export default function AboutPage() {
             <div>
               <div className="flex items-center space-x-2 mb-4">
                 <img src="/images/steerly-logo.jpeg" alt="Steerly Logo" className="h-15 w-auto" />
-                <span className="text-2xl font-bold text-white">Steerly</span>
+                <span className="text-2xl font-bold text-white">Steerli</span>
               </div>
               <p className="text-gray-400">
                 Connecting students with professional driving instructors for a safer, smarter way to learn.
@@ -236,7 +236,7 @@ export default function AboutPage() {
           </div>
           
           <div className="border-t border-gray-800 pt-8 text-center text-gray-400">
-            <p>&copy; 2025 Steerly. All rights reserved.</p>
+            <p>&copy; 2026 Steerli. All rights reserved.</p>
           </div>
         </div>
       </footer>

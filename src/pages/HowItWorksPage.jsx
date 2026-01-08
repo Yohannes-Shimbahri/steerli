@@ -150,7 +150,7 @@ export default function HowItWorksPage() {
           <div className="flex justify-between items-center h-16">
             <a href="/" className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
               <img src="/images/steerly-logo.jpeg" alt="Steerly Logo" className="h-15 w-auto" />
-              <span className="text-2xl font-bold text-gray-900">Steerly</span>
+              <span className="text-2xl font-bold text-gray-900">Steerli</span>
             </a>
             
             <nav className="flex items-center space-x-6">
@@ -166,7 +166,7 @@ export default function HowItWorksPage() {
       <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-indigo-50 via-purple-50 to-white">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl font-bold text-gray-900 mb-6">
-            How <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600">Steerly</span> Works
+            How <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600">Steerli</span> Works
           </h1>
           <p className="text-xl text-gray-600">
             Getting started is simple. Whether you're learning to drive or teaching others, 
@@ -317,7 +317,7 @@ export default function HowItWorksPage() {
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-indigo-50 to-purple-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">What Makes Steerly Different?</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">What Makes Steerli Different?</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               We've built features that make the entire experience seamless for everyone.
             </p>
@@ -380,7 +380,7 @@ export default function HowItWorksPage() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-6">Ready to Get Started?</h2>
           <p className="text-xl text-indigo-100 mb-8">
-            Join thousands of students and instructors who trust Steerly for their driving education needs.
+            A modern platform connecting students and instructors for smarter driving lessons.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -401,7 +401,7 @@ export default function HowItWorksPage() {
             <div>
               <div className="flex items-center space-x-2 mb-4">
                 <img src="/images/steerly-logo.jpeg" alt="Steerly Logo" className="h-15 w-auto" />
-                <span className="text-2xl font-bold text-white">Steerly</span>
+                <span className="text-2xl font-bold text-white">Steerli</span>
               </div>
               <p className="text-gray-400">
                 Connecting students with professional driving instructors for a safer, smarter way to learn.
@@ -435,7 +435,7 @@ export default function HowItWorksPage() {
           </div>
           
           <div className="border-t border-gray-800 pt-8 text-center text-gray-400">
-            <p>&copy; 2025 Steerly. All rights reserved.</p>
+            <p>&copy; 2026 Steerli. All rights reserved.</p>
           </div>
         </div>
       </footer>

@@ -28,7 +28,7 @@ export default function HomePage() {
             {/* Logo */}
             <a href="/" className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
               <img src="/images/steerly-logo.jpeg" alt="Steerly Logo" className="h-15 w-auto" />
-              <span className="text-3xl font-extrabold tracking-wide bg-gradient-to-r from-purple-600 to-purple-800 bg-clip-text text-transparent">Steerly</span>
+              <span className="text-3xl font-extrabold tracking-wide bg-gradient-to-r from-purple-600 to-purple-800 bg-clip-text text-transparent">Steerli</span>
             </a>
             
             {/* Desktop Navigation */}
@@ -100,7 +100,7 @@ export default function HomePage() {
       <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-indigo-50 via-purple-200 to-white animate-fadeIn">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl sm:text-6xl font-bold text-gray-900 mb-6 animate-slideUp">
-            Welcom to steerly
+            Welcom to steerli
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600">
              Find your perfect Driving Instructor
             </span>
@@ -152,7 +152,7 @@ export default function HomePage() {
       {/* Features Grid with Images */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-indigo-50 to-purple-50">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl font-bold text-center text-gray-900 mb-4">Why Choose Steerly?</h2>
+          <h2 className="text-4xl font-bold text-center text-gray-900 mb-4">Why Choose Steerli?</h2>
           <p className="text-center text-gray-600 mb-16 max-w-2xl mx-auto">
             We're committed to making your driving education experience smooth, safe, and successful.
           </p>
@@ -291,24 +291,24 @@ export default function HomePage() {
               <div>
                 <h2 className="text-4xl font-bold mb-4">Ready to Start Learning?</h2>
                 <p className="text-indigo-100 text-lg mb-8">
-                  Join thousands of students who have found their perfect driving instructor on Steerly.
+                  Start your driving journey by connecting with trusted instructors on Steerli.
                 </p>
                 
                 <div className="grid grid-cols-2 gap-6 mb-8">
                   <div className="transform hover:scale-110 transition-transform">
-                    <div className="text-4xl font-bold mb-1">94%</div>
+                    <div className="text-4xl font-bold mb-1">?%</div>
                     <div className="text-indigo-200 text-sm">Pass Rate</div>
                   </div>
                   <div className="transform hover:scale-110 transition-transform">
-                    <div className="text-4xl font-bold mb-1">15K+</div>
+                    <div className="text-4xl font-bold mb-1">?</div>
                     <div className="text-indigo-200 text-sm">Happy Students</div>
                   </div>
                   <div className="transform hover:scale-110 transition-transform">
-                    <div className="text-4xl font-bold mb-1">2.5K+</div>
+                    <div className="text-4xl font-bold mb-1">?</div>
                     <div className="text-indigo-200 text-sm">Instructors</div>
                   </div>
                   <div className="transform hover:scale-110 transition-transform">
-                    <div className="text-4xl font-bold mb-1">4.8★</div>
+                    <div className="text-4xl font-bold mb-1">?</div>
                     <div className="text-indigo-200 text-sm">Average Rating</div>
                   </div>
                 </div>
@@ -356,7 +356,7 @@ export default function HomePage() {
                 <h2 className="text-4xl font-bold text-gray-900 mb-4">Become an Instructor</h2>
                 <p className="text-gray-600 text-lg mb-8">
                   Join our network of professional driving instructors. Set your own schedule, 
-                  rates, and build your business with Steerly's platform.
+                  rates, and build your business with Steerli's platform.
                 </p>
                 
                 <div className="space-y-4 mb-8">
@@ -395,7 +395,7 @@ export default function HomePage() {
             <div>
               <div className="flex items-center space-x-2 mb-4">
                 <img src="/images/steerly-logo.jpeg" alt="Steerly Logo" className="h-15 w-auto" />
-                <span className="text-2xl font-bold text-white">Steerly</span>
+                <span className="text-2xl font-bold text-white">Steerli</span>
               </div>
               <p className="text-gray-400">
                 Connecting students with professional driving instructors for a safer, smarter way to learn.
@@ -429,7 +429,7 @@ export default function HomePage() {
           </div>
           
           <div className="border-t border-gray-800 pt-8 text-center text-gray-400">
-            <p>&copy; 2025 Steerly. All rights reserved.</p>
+            <p>&copy; 2026 Steerli. All rights reserved.</p>
           </div>
         </div>
       </footer>
