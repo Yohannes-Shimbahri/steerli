@@ -125,25 +125,6 @@ export default function HomePage() {
               Sign Up as Instructor
             </a>
           </div>
-
-          {/* Trust Indicators */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            <div className="flex flex-col items-center animate-slideUp" style={{animationDelay: '0.3s'}}>
-              <Shield className="w-12 h-12 text-indigo-600 mb-3" />
-              <h3 className="font-semibold text-gray-900 mb-1">Verified Instructors</h3>
-              <p className="text-x text-gray-600">All instructors are background-checked and certified</p>
-            </div>
-            <div className="flex flex-col items-center animate-slideUp" style={{animationDelay: '0.4s'}}>
-              <DollarSign className="w-12 h-12 text-purple-600 mb-3" />
-              <h3 className="font-semibold text-gray-900 mb-1">Secure Payments</h3>
-              <p className="text-x text-gray-600">Safe and easy payment processing</p>
-            </div>
-            <div className="flex flex-col items-center animate-slideUp" style={{animationDelay: '0.5s'}}>
-              <Star className="w-12 h-12 text-indigo-600 mb-3" />
-              <h3 className="font-semibold text-gray-900 mb-1">Rated & Reviewed</h3>
-              <p className="text-x text-gray-600">Real feedback from real students</p>
-            </div>
-          </div>
         </div>
       </section>
 
