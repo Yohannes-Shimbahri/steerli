@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Car, Target, Heart, Users, Shield, TrendingUp, Menu, X } from 'lucide-react';
 
-const APP_URL = 'https://driving-class-hg0kapb8q-yohannes-shimbahris-projects.vercel.app';
+const APP_URL = 'https://app.steerli.com';
 
 export default function AboutPage() {
   const [isScrolled, setIsScrolled] = useState(false);

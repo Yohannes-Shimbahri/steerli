@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Car, ChevronDown, ChevronUp } from 'lucide-react';
 
-const APP_URL = 'https://driving-class-hg0kapb8q-yohannes-shimbahris-projects.vercel.app';
+const APP_URL = 'https://app.steerli.com';
 
 function FAQItem({ question, answer }) {
   const [isOpen, setIsOpen] = useState(false);

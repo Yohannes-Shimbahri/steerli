@@ -1,7 +1,7 @@
 import React from 'react';
 import { Car, UserPlus, Search, Calendar, CreditCard, MapPin, BookOpen, Trophy, MessageCircle, Star, CheckCircle, ArrowRight } from 'lucide-react';
 
-const APP_URL = 'https://driving-class-hg0kapb8q-yohannes-shimbahris-projects.vercel.app';
+const APP_URL = 'https://app.steerli.com';
 
 export default function HowItWorksPage() {
   const studentSteps = [
