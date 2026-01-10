@@ -100,7 +100,7 @@ export default function HomePage() {
       <section className="pt-24 sm:pt-32 pb-12 sm:pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-indigo-50 via-purple-200 to-white animate-fadeIn">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 sm:mb-6 animate-slideUp">
-            Welcom to steerli
+            Welcome
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600">
              Find your perfect Driving Instructor
             </span>
