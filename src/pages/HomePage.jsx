@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Car, Shield, Star, Clock, MapPin, DollarSign, CheckCircle, Users, Award, TrendingUp, Menu, X } from 'lucide-react';
 
-const APP_URL = 'https://app.steerli.com';
+const APP_URL = process.env.NEXT_PUBLIC_APP_URL || 'https://app.steerli.com';
 
 export default function HomePage() {
   const [isScrolled, setIsScrolled] = useState(false);
