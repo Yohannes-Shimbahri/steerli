@@ -20,15 +20,15 @@ export default function HomePage() {
       {/* Improved Sticky Header */}
       <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${
         isScrolled 
-          ? 'bg-white/95 backdrop-blur-md shadow-md py-3' 
-          : 'bg-white border-b border-gray-200 py-4'
+          ? 'bg-white/95 backdrop-blur-md shadow-md py-2 sm:py-3' 
+          : 'bg-white border-b border-gray-200 py-3 sm:py-4'
       }`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center">
             {/* Logo */}
             <a href="/" className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
-              <img src="/images/steerly-logo.jpeg" alt="Steerly Logo" className="h-15 w-auto" />
-              <span className="text-3xl font-extrabold tracking-wide bg-gradient-to-r from-purple-600 to-purple-800 bg-clip-text text-transparent">Steerli</span>
+              <img src="/images/steerly-logo.jpeg" alt="Steerly Logo" className="h-10 sm:h-15 w-auto" />
+              <span className="text-xl sm:text-2xl lg:text-3xl font-extrabold tracking-wide bg-gradient-to-r from-purple-600 to-purple-800 bg-clip-text text-transparent">Steerli</span>
             </a>
             
             {/* Desktop Navigation */}
@@ -97,30 +97,30 @@ export default function HomePage() {
       </header>
 
       {/* Hero Section with Animation */}
-      <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-indigo-50 via-purple-200 to-white animate-fadeIn">
+      <section className="pt-24 sm:pt-32 pb-12 sm:pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-indigo-50 via-purple-200 to-white animate-fadeIn">
         <div className="max-w-7xl mx-auto text-center">
-          <h1 className="text-5xl sm:text-6xl font-bold text-gray-900 mb-6 animate-slideUp">
+          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 sm:mb-6 animate-slideUp">
             Welcom to steerli
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600">
              Find your perfect Driving Instructor
             </span>
           </h1>
-          <p className="text-xl text-gray-900 mb-12 max-w-3xl mx-auto animate-slideUp" style={{animationDelay: '0.1s'}}>
+          <p className="text-base sm:text-xl text-gray-900 mb-8 sm:mb-12 max-w-3xl mx-auto animate-slideUp" style={{animationDelay: '0.1s'}}>
             Connect with verified, professional driving instructors in your area. 
             Book lessons, track progress, and get your license with confidence.
           </p>
           
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16 animate-slideUp" style={{animationDelay: '0.2s'}}>
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mb-12 sm:mb-16 animate-slideUp" style={{animationDelay: '0.2s'}}>
             <a 
               href={`${APP_URL}/auth/sign-up?type=student`} 
-              className="bg-indigo-600 text-white px-8 py-4 rounded-lg hover:bg-indigo-700 transition-all text-lg font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+              className="bg-indigo-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg hover:bg-indigo-700 transition-all text-base sm:text-lg font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-1"
             >
               Sign Up as Student
             </a>
             <a 
               href={`${APP_URL}/auth/sign-up?type=instructor`} 
-              className="bg-purple-600 text-white px-8 py-4 rounded-lg hover:bg-purple-700 transition-all text-lg font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+              className="bg-purple-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg hover:bg-purple-700 transition-all text-base sm:text-lg font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-1"
             >
               Sign Up as Instructor
             </a>
@@ -131,14 +131,14 @@ export default function HomePage() {
       
 
       {/* Features Grid with Images */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-indigo-50 to-purple-50">
+      <section className="py-12 sm:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-indigo-50 to-purple-50">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl font-bold text-center text-gray-900 mb-4">Why Choose Steerli?</h2>
-          <p className="text-center text-gray-600 mb-16 max-w-2xl mx-auto">
+          <h2 className="text-2xl sm:text-4xl font-bold text-center text-gray-900 mb-3 sm:mb-4">Why Choose Steerli?</h2>
+          <p className="text-center text-sm sm:text-base text-gray-600 mb-8 sm:mb-16 max-w-2xl mx-auto">
             We're committed to making your driving education experience smooth, safe, and successful.
           </p>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8">
             {[
               { 
                 image: "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=500&h=300&fit=crop&q=80",
@@ -187,22 +187,22 @@ export default function HomePage() {
               return (
                 <div key={idx} className="bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden group cursor-pointer">
                   {/* Image */}
-                  <div className="relative h-48 overflow-hidden">
+                  <div className="relative h-32 sm:h-48 overflow-hidden">
                     <img 
                       src={feature.image} 
                       alt={feature.title}
                       className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-300"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-                    <div className={`absolute top-4 right-4 p-3 bg-${feature.color}-600 rounded-lg`}>
-                      <Icon className="w-6 h-6 text-white" />
+                    <div className={`absolute top-3 right-3 sm:top-4 sm:right-4 p-2 sm:p-3 bg-${feature.color}-600 rounded-lg`}>
+                      <Icon className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                     </div>
                   </div>
                   
                   {/* Content */}
-                  <div className="p-6">
-                    <h3 className="text-xl font-semibold text-gray-900 mb-3">{feature.title}</h3>
-                    <p className="text-gray-600">{feature.desc}</p>
+                  <div className="p-4 sm:p-6">
+                    <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2 sm:mb-3">{feature.title}</h3>
+                    <p className="text-sm sm:text-base text-gray-600">{feature.desc}</p>
                   </div>
                 </div>
               );
@@ -212,14 +212,14 @@ export default function HomePage() {
       </section>
 
       {/* How It Works with Images */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-12 sm:py-20 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl font-bold text-center text-gray-900 mb-4">How It Works</h2>
-          <p className="text-center text-gray-600 mb-16 max-w-3xl mx-auto">
+          <h2 className="text-2xl sm:text-4xl font-bold text-center text-gray-900 mb-3 sm:mb-4">How It Works</h2>
+          <p className="text-center text-sm sm:text-base text-gray-600 mb-8 sm:mb-16 max-w-3xl mx-auto">
             Easily connect, book, and provide safe and trusted driving lessons in just a few simple steps.
           </p>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-12">
             {[
               { 
                 num: 1, 
@@ -242,22 +242,22 @@ export default function HomePage() {
             ].map((step, idx) => (
               <div key={idx} className="text-center group">
                 {/* Image */}
-                <div className="relative mb-6 rounded-2xl overflow-hidden shadow-lg">
+                <div className="relative mb-4 sm:mb-6 rounded-2xl overflow-hidden shadow-lg">
                   <img 
                     src={step.image} 
                     alt={step.title}
-                    className="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-300"
+                    className="w-full h-40 sm:h-48 object-cover transform group-hover:scale-110 transition-transform duration-300"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                   
                   {/* Number Badge */}
-                  <div className="absolute top-4 left-4 w-16 h-16 bg-gradient-to-br from-indigo-600 to-purple-600 rounded-full flex items-center justify-center text-white text-2xl font-bold shadow-lg">
+                  <div className="absolute top-3 left-3 sm:top-4 sm:left-4 w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-indigo-600 to-purple-600 rounded-full flex items-center justify-center text-white text-xl sm:text-2xl font-bold shadow-lg">
                     {step.num}
                   </div>
                 </div>
                 
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">{step.title}</h3>
-                <p className="text-gray-600">{step.desc}</p>
+                <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2 sm:mb-3">{step.title}</h3>
+                <p className="text-sm sm:text-base text-gray-600">{step.desc}</p>
               </div>
             ))}
           </div>
@@ -265,38 +265,38 @@ export default function HomePage() {
       </section>
 
       {/* For Students CTA */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-12 sm:py-20 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
-          <div className="bg-gradient-to-br from-indigo-600 to-purple-600 rounded-2xl p-12 text-white shadow-2xl transform hover:scale-105 transition-transform duration-300">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="bg-gradient-to-br from-indigo-600 to-purple-600 rounded-2xl p-6 sm:p-12 text-white shadow-2xl transform hover:scale-105 transition-transform duration-300">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
               <div>
-                <h2 className="text-4xl font-bold mb-4">Ready to Start Learning?</h2>
-                <p className="text-indigo-100 text-lg mb-8">
+                <h2 className="text-2xl sm:text-4xl font-bold mb-3 sm:mb-4">Ready to Start Learning?</h2>
+                <p className="text-indigo-100 text-sm sm:text-lg mb-6 sm:mb-8">
                   Start your driving journey by connecting with trusted instructors on Steerli.
                 </p>
                 
-                <div className="grid grid-cols-2 gap-6 mb-8">
+                <div className="grid grid-cols-2 gap-4 sm:gap-6 mb-6 sm:mb-8">
                   <div className="transform hover:scale-110 transition-transform">
-                    <div className="text-4xl font-bold mb-1">?%</div>
-                    <div className="text-indigo-200 text-sm">Pass Rate</div>
+                    <div className="text-2xl sm:text-4xl font-bold mb-1">?%</div>
+                    <div className="text-indigo-200 text-xs sm:text-sm">Pass Rate</div>
                   </div>
                   <div className="transform hover:scale-110 transition-transform">
-                    <div className="text-4xl font-bold mb-1">?</div>
-                    <div className="text-indigo-200 text-sm">Happy Students</div>
+                    <div className="text-2xl sm:text-4xl font-bold mb-1">?</div>
+                    <div className="text-indigo-200 text-xs sm:text-sm">Happy Students</div>
                   </div>
                   <div className="transform hover:scale-110 transition-transform">
-                    <div className="text-4xl font-bold mb-1">?</div>
-                    <div className="text-indigo-200 text-sm">Instructors</div>
+                    <div className="text-2xl sm:text-4xl font-bold mb-1">?</div>
+                    <div className="text-indigo-200 text-xs sm:text-sm">Instructors</div>
                   </div>
                   <div className="transform hover:scale-110 transition-transform">
-                    <div className="text-4xl font-bold mb-1">?</div>
-                    <div className="text-indigo-200 text-sm">Average Rating</div>
+                    <div className="text-2xl sm:text-4xl font-bold mb-1">?</div>
+                    <div className="text-indigo-200 text-xs sm:text-sm">Average Rating</div>
                   </div>
                 </div>
                 
                 <a 
                   href={`${APP_URL}/auth/sign-up?type=student`} 
-                  className="inline-block bg-white text-indigo-600 px-8 py-4 rounded-lg hover:bg-gray-50 transition-all text-lg font-semibold shadow-lg transform hover:scale-105"
+                  className="inline-block bg-white text-indigo-600 px-6 sm:px-8 py-3 sm:py-4 rounded-lg hover:bg-gray-50 transition-all text-base sm:text-lg font-semibold shadow-lg transform hover:scale-105"
                 >
                   Get Started as Student →
                 </a>
@@ -318,10 +318,10 @@ export default function HomePage() {
       </section>
 
       {/* For Instructors CTA */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-purple-50 to-indigo-50">
+      <section className="py-12 sm:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-purple-50 to-indigo-50">
         <div className="max-w-7xl mx-auto">
-          <div className="bg-white rounded-2xl p-12 shadow-xl hover:shadow-2xl transition-shadow duration-300">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="bg-white rounded-2xl p-6 sm:p-12 shadow-xl hover:shadow-2xl transition-shadow duration-300">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
               <div className="hidden lg:flex items-center justify-center">
                 <div className="relative">
                   <img 
@@ -334,24 +334,24 @@ export default function HomePage() {
               </div>
               
               <div>
-                <h2 className="text-4xl font-bold text-gray-900 mb-4">Become an Instructor</h2>
-                <p className="text-gray-600 text-lg mb-8">
+                <h2 className="text-2xl sm:text-4xl font-bold text-gray-900 mb-3 sm:mb-4">Become an Instructor</h2>
+                <p className="text-gray-600 text-sm sm:text-lg mb-6 sm:mb-8">
                   Join our network of professional driving instructors. Set your own schedule, 
                   rates, and build your business with Steerli's platform.
                 </p>
                 
-                <div className="space-y-4 mb-8">
+                <div className="space-y-3 sm:space-y-4 mb-6 sm:mb-8">
                   {[
                     { title: "Earn $45-60/hour", subtitle: "Set your own competitive rates" },
                     { title: "Flexible Schedule", subtitle: "Work when you want, where you want" },
                     { title: "Grow Your Business", subtitle: "Access to thousands of potential students" },
                     { title: "Easy Management", subtitle: "Scheduling, payments, and communication in one place" }
                   ].map((item, idx) => (
-                    <div key={idx} className="flex items-start space-x-3 group">
-                      <CheckCircle className="w-6 h-6 text-green-600 flex-shrink-0 mt-1 group-hover:scale-110 transition-transform" />
+                    <div key={idx} className="flex items-start space-x-2 sm:space-x-3 group">
+                      <CheckCircle className="w-5 h-5 sm:w-6 sm:h-6 text-green-600 flex-shrink-0 mt-0.5 sm:mt-1 group-hover:scale-110 transition-transform" />
                       <div>
-                        <div className="font-semibold text-gray-900">{item.title}</div>
-                        <div className="text-gray-600 text-sm">{item.subtitle}</div>
+                        <div className="font-semibold text-gray-900 text-sm sm:text-base">{item.title}</div>
+                        <div className="text-gray-600 text-xs sm:text-sm">{item.subtitle}</div>
                       </div>
                     </div>
                   ))}
@@ -359,7 +359,7 @@ export default function HomePage() {
                 
                 <a 
                   href={`${APP_URL}/auth/sign-up?type=instructor`} 
-                  className="inline-block bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-8 py-4 rounded-lg hover:from-indigo-700 hover:to-purple-700 transition-all text-lg font-semibold shadow-lg transform hover:scale-105"
+                  className="inline-block bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg hover:from-indigo-700 hover:to-purple-700 transition-all text-base sm:text-lg font-semibold shadow-lg transform hover:scale-105"
                 >
                   Join as Instructor →
                 </a>
@@ -370,22 +370,22 @@ export default function HomePage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-gray-300 py-16 px-4 sm:px-6 lg:px-8">
+      <footer className="bg-gray-900 text-gray-300 py-8 sm:py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 sm:gap-12 mb-8 sm:mb-12">
             <div>
-              <div className="flex items-center space-x-2 mb-4">
-                <img src="/images/steerly-logo.jpeg" alt="Steerly Logo" className="h-15 w-auto" />
-                <span className="text-2xl font-bold text-white">Steerli</span>
+              <div className="flex items-center space-x-2 mb-3 sm:mb-4">
+                <img src="/images/steerly-logo.jpeg" alt="Steerly Logo" className="h-10 sm:h-15 w-auto" />
+                <span className="text-xl sm:text-2xl font-bold text-white">Steerli</span>
               </div>
-              <p className="text-gray-400">
+              <p className="text-gray-400 text-sm sm:text-base">
                 Connecting students with professional driving instructors for a safer, smarter way to learn.
               </p>
             </div>
             
             <div>
-              <h3 className="text-white font-semibold mb-4">For Students</h3>
-              <ul className="space-y-2">
+              <h3 className="text-white font-semibold mb-3 sm:mb-4 text-sm sm:text-base">For Students</h3>
+              <ul className="space-y-2 text-sm sm:text-base">
                 <li><a href={`${APP_URL}/auth/sign-up?type=student`} className="hover:text-indigo-400 transition-colors">Sign Up</a></li>
                 <li><a href="/how-it-works" className="hover:text-indigo-400 transition-colors">How It Works</a></li>
                 <li><a href="/faq" className="hover:text-indigo-400 transition-colors">FAQ</a></li>
@@ -393,23 +393,23 @@ export default function HomePage() {
             </div>
             
             <div>
-              <h3 className="text-white font-semibold mb-4">For Instructors</h3>
-              <ul className="space-y-2">
+              <h3 className="text-white font-semibold mb-3 sm:mb-4 text-sm sm:text-base">For Instructors</h3>
+              <ul className="space-y-2 text-sm sm:text-base">
                 <li><a href={`${APP_URL}/auth/sign-up?type=instructor`} className="hover:text-indigo-400 transition-colors">Become an Instructor</a></li>
                 <li><a href="/how-it-works#for-instructors" className="hover:text-indigo-400 transition-colors">Benefits</a></li>
               </ul>
             </div>
             
             <div>
-              <h3 className="text-white font-semibold mb-4">Company</h3>
-              <ul className="space-y-2">
+              <h3 className="text-white font-semibold mb-3 sm:mb-4 text-sm sm:text-base">Company</h3>
+              <ul className="space-y-2 text-sm sm:text-base">
                 <li><a href="/about" className="hover:text-indigo-400 transition-colors">About Us</a></li>
                 <li><a href="/contact" className="hover:text-indigo-400 transition-colors">Contact</a></li>
               </ul>
             </div>
           </div>
           
-          <div className="border-t border-gray-800 pt-8 text-center text-gray-400">
+          <div className="border-t border-gray-800 pt-6 sm:pt-8 text-center text-gray-400 text-sm sm:text-base">
             <p>&copy; 2026 Steerli. All rights reserved.</p>
           </div>
         </div>
