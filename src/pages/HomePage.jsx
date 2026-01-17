@@ -265,57 +265,82 @@ export default function HomePage() {
       </section>
 
       {/* For Students CTA */}
-      <section className="py-12 sm:py-20 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-12 sm:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-sky-50 to-indigo-50">
         <div className="max-w-7xl mx-auto">
-          <div className="bg-gradient-to-br from-indigo-600 to-purple-600 rounded-2xl p-6 sm:p-12 text-white shadow-2xl transform hover:scale-105 transition-transform duration-300">
+          <div className="bg-white rounded-2xl p-6 sm:p-12 shadow-xl hover:shadow-2xl transition-shadow duration-300">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
-              <div>
-                <h2 className="text-2xl sm:text-4xl font-bold mb-3 sm:mb-4">Ready to Start Learning?</h2>
-                <p className="text-indigo-100 text-sm sm:text-lg mb-6 sm:mb-8">
-                  Start your driving journey by connecting with trusted instructors on Steerli.
-                </p>
-                
-                <div className="grid grid-cols-2 gap-4 sm:gap-6 mb-6 sm:mb-8">
-                  <div className="transform hover:scale-110 transition-transform">
-                    <div className="text-2xl sm:text-4xl font-bold mb-1">?%</div>
-                    <div className="text-indigo-200 text-xs sm:text-sm">Pass Rate</div>
-                  </div>
-                  <div className="transform hover:scale-110 transition-transform">
-                    <div className="text-2xl sm:text-4xl font-bold mb-1">?</div>
-                    <div className="text-indigo-200 text-xs sm:text-sm">Happy Students</div>
-                  </div>
-                  <div className="transform hover:scale-110 transition-transform">
-                    <div className="text-2xl sm:text-4xl font-bold mb-1">?</div>
-                    <div className="text-indigo-200 text-xs sm:text-sm">Instructors</div>
-                  </div>
-                  <div className="transform hover:scale-110 transition-transform">
-                    <div className="text-2xl sm:text-4xl font-bold mb-1">?</div>
-                    <div className="text-indigo-200 text-xs sm:text-sm">Average Rating</div>
-                  </div>
-                </div>
-                
-                <a 
-                  href={`${APP_URL}/auth/sign-up?type=student`} 
-                  className="inline-block bg-white text-indigo-600 px-6 sm:px-8 py-3 sm:py-4 rounded-lg hover:bg-gray-50 transition-all text-base sm:text-lg font-semibold shadow-lg transform hover:scale-105"
-                >
-                  Get Started as Student →
-                </a>
-              </div>
-              
+
+              {/* Image */}
               <div className="hidden lg:flex items-center justify-center">
                 <div className="relative">
-                  <img 
-                    src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=600&h=600&fit=crop" 
-                    alt="Happy student learning to drive"
+                  <img
+                    src="https://images.unsplash.com/photo-1542362567-b07e54358753?w=600&h=600&fit=crop&q=80"
+                    alt="Student learning to drive with instructor"
                     className="w-96 h-96 object-cover rounded-2xl shadow-2xl transform hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-br from-indigo-600/20 to-purple-600/20 rounded-2xl"></div>
+                  <div className="absolute inset-0 bg-gradient-to-br from-sky-500/20 to-indigo-600/20 rounded-2xl" />
                 </div>
               </div>
+
+              {/* Content */}
+              <div>
+                <h2 className="text-2xl sm:text-4xl font-bold text-gray-900 mb-3 sm:mb-4">
+                  Learn to Drive with Confidence
+                </h2>
+
+                <p className="text-gray-600 text-sm sm:text-lg mb-6 sm:mb-8">
+                  Steerli helps you find trusted instructors, book lessons easily,
+                  and track your progress — all in one simple platform.
+                </p>
+
+                {/* Advantages list */}
+                <div className="space-y-3 sm:space-y-4 mb-6 sm:mb-8">
+                  {[
+                    {
+                      title: 'Certified Instructors',
+                      subtitle: 'Learn from vetted, professional driving instructors'
+                    },
+                    {
+                      title: 'Flexible Scheduling',
+                      subtitle: 'Book lessons that fit your school or work schedule'
+                    },
+                    {
+                      title: 'Transparent Pricing',
+                      subtitle: 'See prices upfront with no hidden fees'
+                    },
+                    {
+                      title: 'Progress Tracking',
+                      subtitle: 'Track lessons, feedback, and readiness for your road test'
+                    }
+                  ].map((item, idx) => (
+                    <div key={idx} className="flex items-start space-x-2 sm:space-x-3 group">
+                      <CheckCircle className="w-5 h-5 sm:w-6 sm:h-6 text-sky-600 flex-shrink-0 mt-0.5 sm:mt-1 group-hover:scale-110 transition-transform" />
+                      <div>
+                        <div className="font-semibold text-gray-900 text-sm sm:text-base">
+                          {item.title}
+                        </div>
+                        <div className="text-gray-600 text-xs sm:text-sm">
+                          {item.subtitle}
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+
+                {/* CTA */}
+                <a
+                  href={`${APP_URL}/auth/sign-up?type=student`}
+                  className="inline-block bg-gradient-to-r from-sky-500 to-indigo-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg hover:from-sky-600 hover:to-indigo-700 transition-all text-base sm:text-lg font-semibold shadow-lg transform hover:scale-105"
+                >
+                  Get Started as a Student →
+                </a>
+              </div>
+
             </div>
           </div>
         </div>
       </section>
+
 
       {/* For Instructors CTA */}
       <section className="py-12 sm:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-purple-50 to-indigo-50">
