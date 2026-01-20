@@ -97,8 +97,13 @@ export default function AboutPage() {
               </p>
             </div>
             
-            <div className="bg-gradient-to-br from-indigo-100 to-purple-100 rounded-2xl p-8 sm:p-12 flex items-center justify-center transform hover:scale-105 transition-transform duration-300">
-              <Heart className="w-48 h-48 sm:w-64 sm:h-64 text-indigo-600 opacity-20" />
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-300">
+              <img 
+                src="/about-us.png" 
+                alt="About Steerli"
+                className="w-full h-96 object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-br from-indigo-600/20 to-purple-600/20"></div>
             </div>
           </div>
         </div>

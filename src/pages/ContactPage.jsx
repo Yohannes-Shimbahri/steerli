@@ -143,9 +143,9 @@ export default function ContactPage() {
 
               <div className="space-y-4 sm:space-y-6">
                 {[
-                  { icon: Mail, color: "indigo", title: "Email", value: "support@steerly.com" },
-                  { icon: Phone, color: "purple", title: "Phone", value: "+1 (555) 123-4567" },
-                  { icon: MapPin, color: "indigo", title: "Office", value: "123 Driving Lane\nSan Francisco, CA 94102" }
+                  { icon: Mail, color: "indigo", title: "Email", value: "steerli.app@gmail.com" },
+                  { icon: Phone, color: "purple", title: "Phone", value: "+1 (647) 531-8028" },
+                  { icon: MapPin, color: "indigo", title: "Office", value: "150 Ellendale Dr ON M1P 1P1" }
                 ].map((item, idx) => {
                   const Icon = item.icon;
                   return (
