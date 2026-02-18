@@ -204,13 +204,13 @@ export default function HomePage() {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 sm:mb-16 animate-slide-in-up" style={{animationDelay: '0.4s'}}>
             <a 
-              href={`${APP_URL}/auth/sign-up?type=student`} 
+              href={`${APP_URL}/auth/sign-up/student`} 
               className="bg-purple-600 text-white px-8 py-4 rounded-xl hover:bg-purple-700 transition-all text-lg font-bold shadow-2xl shadow-purple-900/50 transform hover:scale-105"
             >
               Start Learning Today
             </a>
             <a 
-              href={`${APP_URL}/auth/sign-up?type=instructor`} 
+              href={`${APP_URL}/auth/sign-up/instructor`} 
               className="bg-gray-800 text-gray-300 border border-gray-700 px-8 py-4 rounded-xl hover:bg-gray-700 transition-all text-lg font-bold shadow-lg transform hover:scale-105"
             >
               Become an Instructor
@@ -345,10 +345,10 @@ export default function HomePage() {
                 Join students who have already found their perfect instructor through Steerli.
               </p>
               <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6">
-                <a href={`${APP_URL}/auth/sign-up`} className="w-full sm:w-auto bg-purple-600 text-white px-8 sm:px-10 py-4 rounded-xl hover:bg-purple-700 transition-all font-bold text-lg shadow-2xl shadow-purple-900/50 transform hover:scale-105">
+                <a href={`${APP_URL}/auth/sign-up/student`} className="w-full sm:w-auto bg-purple-600 text-white px-8 sm:px-10 py-4 rounded-xl hover:bg-purple-700 transition-all font-bold text-lg shadow-2xl shadow-purple-900/50 transform hover:scale-105">
                   Sign Up as Student
                 </a>
-                <a href={`${APP_URL}/auth/sign-up?type=instructor`} className="w-full sm:w-auto bg-indigo-600 text-white px-8 sm:px-10 py-4 rounded-xl hover:bg-indigo-700 transition-all font-bold text-lg shadow-2xl shadow-indigo-900/50 transform hover:scale-105">
+                <a href={`${APP_URL}/auth/sign-up/instructor`} className="w-full sm:w-auto bg-indigo-600 text-white px-8 sm:px-10 py-4 rounded-xl hover:bg-indigo-700 transition-all font-bold text-lg shadow-2xl shadow-indigo-900/50 transform hover:scale-105">
                   Become an Instructor
                 </a>
               </div>
@@ -374,7 +374,7 @@ export default function HomePage() {
             <div>
               <h3 className="text-white font-bold mb-4 sm:mb-6 text-sm sm:text-base">For Students</h3>
               <ul className="space-y-3 sm:space-y-4 text-sm sm:text-base">
-                <li><a href={`${APP_URL}/auth/sign-up?type=student`} className="hover:text-purple-400 transition-colors flex items-center group"><ChevronRight className="w-4 h-4 opacity-0 group-hover:opacity-100 -ml-4 group-hover:ml-0 transition-all" /><span>Sign Up</span></a></li>
+                <li><a href={`${APP_URL}/auth/sign-up/student`} className="hover:text-purple-400 transition-colors flex items-center group"><ChevronRight className="w-4 h-4 opacity-0 group-hover:opacity-100 -ml-4 group-hover:ml-0 transition-all" /><span>Sign Up</span></a></li>
                 <li><a href="/how-it-works" className="hover:text-purple-400 transition-colors flex items-center group"><ChevronRight className="w-4 h-4 opacity-0 group-hover:opacity-100 -ml-4 group-hover:ml-0 transition-all" /><span>How It Works</span></a></li>
                 <li><a href="/faq" className="hover:text-purple-400 transition-colors flex items-center group"><ChevronRight className="w-4 h-4 opacity-0 group-hover:opacity-100 -ml-4 group-hover:ml-0 transition-all" /><span>FAQ</span></a></li>
               </ul>
@@ -383,7 +383,7 @@ export default function HomePage() {
             <div>
               <h3 className="text-white font-bold mb-4 sm:mb-6 text-sm sm:text-base">For Instructors</h3>
               <ul className="space-y-3 sm:space-y-4 text-sm sm:text-base">
-                <li><a href={`${APP_URL}/auth/sign-up?type=instructor`} className="hover:text-purple-400 transition-colors flex items-center group"><ChevronRight className="w-4 h-4 opacity-0 group-hover:opacity-100 -ml-4 group-hover:ml-0 transition-all" /><span>Become an Instructor</span></a></li>
+                <li><a href={`${APP_URL}/auth/sign-up/instructor`} className="hover:text-purple-400 transition-colors flex items-center group"><ChevronRight className="w-4 h-4 opacity-0 group-hover:opacity-100 -ml-4 group-hover:ml-0 transition-all" /><span>Become an Instructor</span></a></li>
                 <li><a href="/how-it-works#for-instructors" className="hover:text-purple-400 transition-colors flex items-center group"><ChevronRight className="w-4 h-4 opacity-0 group-hover:opacity-100 -ml-4 group-hover:ml-0 transition-all" /><span>Benefits</span></a></li>
               </ul>
             </div>

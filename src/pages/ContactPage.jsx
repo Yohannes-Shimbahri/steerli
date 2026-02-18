@@ -355,7 +355,7 @@ export default function ContactPage() {
         <div>
           <h3 className="text-white font-semibold mb-3 sm:mb-4 text-sm sm:text-base">For Students</h3>
           <ul className="space-y-2 text-sm sm:text-base">
-            <li><a href={`${APP_URL}/auth/sign-up?type=student`} className="hover:text-purple-400 transition-colors">Sign Up</a></li>
+            <li><a href={`${APP_URL}/auth/sign-up/student`} className="hover:text-purple-400 transition-colors">Sign Up</a></li>
             <li><a href="/how-it-works" className="hover:text-purple-400 transition-colors">How It Works</a></li>
             <li><a href="/faq" className="hover:text-purple-400 transition-colors">FAQ</a></li>
           </ul>
@@ -364,7 +364,7 @@ export default function ContactPage() {
         <div>
           <h3 className="text-white font-semibold mb-3 sm:mb-4 text-sm sm:text-base">For Instructors</h3>
           <ul className="space-y-2 text-sm sm:text-base">
-            <li><a href={`${APP_URL}/auth/sign-up?type=instructor`} className="hover:text-purple-400 transition-colors">Become an Instructor</a></li>
+            <li><a href={`${APP_URL}/auth/sign-up/instructor`} className="hover:text-purple-400 transition-colors">Become an Instructor</a></li>
             <li><a href="/how-it-works#for-instructors" className="hover:text-purple-400 transition-colors">Benefits</a></li>
           </ul>
         </div>

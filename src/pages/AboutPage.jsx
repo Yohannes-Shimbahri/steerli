@@ -203,10 +203,10 @@ export default function AboutPage() {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
-            <a href={`${APP_URL}/auth/sign-up?type=student`} className="bg-purple-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl hover:bg-purple-700 transition-all text-base sm:text-lg font-semibold shadow-lg shadow-purple-900/50 transform hover:scale-105">
+            <a href={`${APP_URL}/auth/sign-up/student`} className="bg-purple-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl hover:bg-purple-700 transition-all text-base sm:text-lg font-semibold shadow-lg shadow-purple-900/50 transform hover:scale-105">
               Sign Up as Student
             </a>
-            <a href={`${APP_URL}/auth/sign-up?type=instructor`} className="bg-indigo-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl hover:bg-indigo-700 transition-all text-base sm:text-lg font-semibold shadow-lg shadow-indigo-900/50 transform hover:scale-105">
+            <a href={`${APP_URL}/auth/sign-up/instructor`} className="bg-indigo-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl hover:bg-indigo-700 transition-all text-base sm:text-lg font-semibold shadow-lg shadow-indigo-900/50 transform hover:scale-105">
               Become an Instructor
             </a>
           </div>
@@ -230,7 +230,7 @@ export default function AboutPage() {
             <div>
               <h3 className="text-white font-semibold mb-3 sm:mb-4 text-sm sm:text-base">For Students</h3>
               <ul className="space-y-2 text-sm sm:text-base">
-                <li><a href={`${APP_URL}/auth/sign-up?type=student`} className="hover:text-purple-400 transition-colors">Sign Up</a></li>
+                <li><a href={`${APP_URL}/auth/sign-up/student`} className="hover:text-purple-400 transition-colors">Sign Up</a></li>
                 <li><a href="/how-it-works" className="hover:text-purple-400 transition-colors">How It Works</a></li>
                 <li><a href="/faq" className="hover:text-purple-400 transition-colors">FAQ</a></li>
               </ul>
@@ -239,7 +239,7 @@ export default function AboutPage() {
             <div>
               <h3 className="text-white font-semibold mb-3 sm:mb-4 text-sm sm:text-base">For Instructors</h3>
               <ul className="space-y-2 text-sm sm:text-base">
-                <li><a href={`${APP_URL}/auth/sign-up?type=instructor`} className="hover:text-purple-400 transition-colors">Become an Instructor</a></li>
+                <li><a href={`${APP_URL}/auth/sign-up/instructor`} className="hover:text-purple-400 transition-colors">Become an Instructor</a></li>
                 <li><a href="/how-it-works#for-instructors" className="hover:text-purple-400 transition-colors">Benefits</a></li>
               </ul>
             </div>
